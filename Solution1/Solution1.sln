@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps", "Apps\Apps.csproj", "{EA226571-CAD1-40C7-BB9B-FC95A53FC0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{46173171-6AE8-4CEE-AC29-10B91F39073A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA226571-CAD1-40C7-BB9B-FC95A53FC0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA226571-CAD1-40C7-BB9B-FC95A53FC0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA226571-CAD1-40C7-BB9B-FC95A53FC0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA226571-CAD1-40C7-BB9B-FC95A53FC0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46173171-6AE8-4CEE-AC29-10B91F39073A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46173171-6AE8-4CEE-AC29-10B91F39073A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46173171-6AE8-4CEE-AC29-10B91F39073A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46173171-6AE8-4CEE-AC29-10B91F39073A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {255BC2D1-9F03-4A58-836D-07AF5C1FA717}
+	EndGlobalSection
+EndGlobal

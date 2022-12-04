@@ -1,0 +1,12 @@
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\bin\Debug\net6.0\DataStructures.deps.json
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\bin\Debug\net6.0\DataStructures.dll
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\bin\Debug\net6.0\DataStructures.pdb
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.csproj.AssemblyReference.cache
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.AssemblyInfoInputs.cache
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.AssemblyInfo.cs
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.dll
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\refint\DataStructures.dll
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\DataStructures.pdb
+C:\Users\musap\OneDrive\Ekler\Masaüstü\DataStructures&Algorithms\Solution1\DataStructures\obj\Debug\net6.0\ref\DataStructures.dll
