@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Tree\" />
+    <Folder Include="Queue\" />
+    <Folder Include="Stack\" />
+  </ItemGroup>
+
 </Project>

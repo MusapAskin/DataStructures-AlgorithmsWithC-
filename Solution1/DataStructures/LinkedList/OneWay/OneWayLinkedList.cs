@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -22,9 +23,9 @@ namespace DataStructures.LinkedList.OneWay
 
         }
         private bool isHeadNull => Head == null;
-        public void AddFront(T value)
+        public void AddFront(T item)
         {
-            var newNode = new OneWayLinkedListNode<T>(value);
+            var newNode = new OneWayLinkedListNode<T>(item);
             if (isHeadNull)
             {
                 Head = newNode;
@@ -36,9 +37,9 @@ namespace DataStructures.LinkedList.OneWay
                 Head = newNode;
             }
         }
-        public void AddBack(T value)
+        public void AddBack(T item)
         {
-            var newNode = new OneWayLinkedListNode<T>(value);
+            var newNode = new OneWayLinkedListNode<T>(item);
             if (isHeadNull)
             {
                 Head = newNode;
@@ -50,14 +51,14 @@ namespace DataStructures.LinkedList.OneWay
                 Tail = newNode;
             }
         }
-        public void AddAfter(T node, T value)
+        public void AddAfter(T node, T item)
         {
-            var newNode = new OneWayLinkedListNode<T>(value);
+            var newNode = new OneWayLinkedListNode<T>(item);
             var Node = new OneWayLinkedListNode<T>(node);
             var Prev = Head;
             if (isHeadNull)
             {
-                AddFront(value);
+                AddFront(item);
                 return;
             }
             while (Prev != null)
@@ -100,29 +101,23 @@ namespace DataStructures.LinkedList.OneWay
             Prev.Next = null;
             return value;
         }
-        public void Remove(T value)
+        public void Remove(T item)
         {
             var current = Head;
-            var Node = new OneWayLinkedListNode<T>(value);
+            var Node = new OneWayLinkedListNode<T>(item);
             if (isHeadNull)
                 throw new Exception("Nothing to remove! List is null.");
-            else if (Head.Value.Equals(Node.Value)){ 
+            else if (Head.Value.Equals(Node.Value))
                 RemoveFirst();
-                return; 
-            }
             else if (Tail.Value.Equals(Node.Value))
-            {
-                RemoveLast();
-                return;
-            }
+                    RemoveLast();
             else
             {
-                while (!(current.Next.Value.Equals(Node.Value)))
-                    current = current.Next;
-                current.Next = current.Next.Next;
-                return;
+                    while (!(current.Next.Value.Equals(Node.Value)))
+                        current = current.Next;
+                    current.Next = current.Next.Next;
             }
-            throw new ArgumentException("The value could not be found in the list!");
+           throw new ArgumentException("The value could not be found in the list!");
         }
         public IEnumerator<T> GetEnumerator()
         {
