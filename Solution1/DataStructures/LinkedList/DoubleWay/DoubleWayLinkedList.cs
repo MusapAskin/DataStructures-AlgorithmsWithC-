@@ -81,6 +81,30 @@ namespace DataStructures.LinkedList.DoubleWay
                 throw new ArgumentException("The reference node is not in linkedlist.");
             }
         }
+        public void AddBefore(T node, T item)
+        {
+            var newNode=new DoubleWayLinkedListNode<T>(item);
+            var Node=new DoubleWayLinkedListNode<T>(node);
+            var prev = Head;
+            if (isHeadNull && Head.Value.Equals(Node.Value))
+                AddFront(item);
+            else
+            {
+                while (prev.Next!=null)
+                {
+                    if (prev.Next.Value.Equals(Node.Value))
+                    {
+                        newNode.Next = prev.Next;
+                        newNode.Previus = prev;
+                        prev.Next= newNode;
+                        newNode.Next.Previus = newNode;
+                        return;
+                    }
+                    prev = prev.Next;
+                }
+                throw new ArgumentException("The reference node is not in linkedlist.");
+            }
+        }
         public T RemoveFirst()
         {
             var value = Head.Value;
