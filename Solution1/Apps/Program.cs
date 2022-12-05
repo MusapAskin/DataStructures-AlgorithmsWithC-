@@ -5,7 +5,7 @@ using System.Collections.Generic;
 var initial = Enumerable.Range(1, 10).OrderBy(x => rnd.Next()).ToList();
 var linkedlist = new OneWayLinkedListed<int>(initial);
 linkedList.Where(x => x > 5).ToList().ForEach(x => Console.WriteLine(x + " "));
-*/
-var linkedlist = new DoubleWayLinkedList<int>(new int[] {1,2,4});
+var linkedlist = new DoubleWayLinkedList<int>(new int[] {1,2,3,4,5});*/
+
 foreach (var item in linkedlist) Console.Write(item + " ");
 Console.ReadKey(); 

@@ -83,20 +83,20 @@ namespace DataStructures.LinkedList.DoubleWay
         }
         public void AddBefore(T node, T item)
         {
-            var newNode=new DoubleWayLinkedListNode<T>(item);
-            var Node=new DoubleWayLinkedListNode<T>(node);
+            var newNode = new DoubleWayLinkedListNode<T>(item);
+            var Node = new DoubleWayLinkedListNode<T>(node);
             var prev = Head;
             if (isHeadNull && Head.Value.Equals(Node.Value))
                 AddFront(item);
             else
             {
-                while (prev.Next!=null)
+                while (prev.Next != null)
                 {
                     if (prev.Next.Value.Equals(Node.Value))
                     {
                         newNode.Next = prev.Next;
                         newNode.Previus = prev;
-                        prev.Next= newNode;
+                        prev.Next = newNode;
                         newNode.Next.Previus = newNode;
                         return;
                     }
@@ -110,6 +110,12 @@ namespace DataStructures.LinkedList.DoubleWay
             var value = Head.Value;
             if (isHeadNull)
                 throw new Exception("Nothing to remove! List is null.");
+            else if (Head == Tail)
+            {
+                Head = null;
+                Tail = null;
+                return value;
+            }
             else
             {
                 Head = Head.Next;
@@ -122,6 +128,12 @@ namespace DataStructures.LinkedList.DoubleWay
             var value = Head.Value;
             if (isHeadNull)
                 throw new Exception("Nothing to remove! List is null.");
+            else if (Head == Tail)
+            {
+                Head = null;
+                Tail = null;
+                return value;
+            }
             else
             {
                 Tail = Tail.Previus;
@@ -141,7 +153,7 @@ namespace DataStructures.LinkedList.DoubleWay
             else
             {
                 var prev = Head;
-                while (prev.Next!=null)
+                while (prev.Next != null)
                 {
                     if (prev.Next.Value.Equals(Node.Value))
                     {
